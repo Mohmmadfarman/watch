@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.826);
+            flex-direction: column;
+        }
+        #mn{
+            width: 40%;
+            height: 20%;
+            background-color: rgb(3, 20, 20);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 7px  rgb(163, 19, 19) dotted ;
+            border-radius: 10px;
+            animation: far 3s ease-in-out 2s infinite alternate both;
+        }
+        @keyframes farman {
+            0%{
+                background-color: red;
+                transform: translateX(0);
+            }
+           50%{
+            background-color: green;
+            transform: translateX(100px);
+           }
+            
+        }
+        #btn{
+            margin-top: 40px;
+            width: 37%;
+            height: 10%;
+            /* background-color: aqua; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        button{
+            padding: 10px;
+            font-size: 1.3rem;
+            background-color: black;
+            color: azure;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px 4px rgba(34, 17, 17, 0.896);
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 id="day" style="color: aliceblue;">k</h1> -->
+    <h1 id="start" style="color: blue; font-size: 2.4rem; font-weight: 600px; margin-bottom: 100px;margin-top: 100px;">Digital Clock</h1>
+    <main id="mn">
+
+        
+     <h1 id="hd" style="color: blue; font-size: 2.6rem;"></h1>
+    </main>
+    <div id="btn">
+        <button id="show">Hidde Time</button>
+        <button id="hidde">Show Time</button>
+      </div>
+
+    <script src="index.js">
+        
+        
+
+    </script>
+</body>
+</html>
